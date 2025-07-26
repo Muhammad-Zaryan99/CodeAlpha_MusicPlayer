@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box1 center">
+            <h4 class="singer">Alan Walker</h4>
+            <div class="art">
+            <img class="center artist" src="p0.jpg" >
+            </div>
+            <div class="art-name ">
+                <p class="title">FADED</p>
+            </div>
+            <div class="progress">
+                <div class="time">
+                    <div class="start">
+                        <p id="start">0:00</p>
+                    </div>
+                    <div class="end">
+                      <p id="end">0:00</p>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="linechild"></div>
+                </div>
+            </div>
+            <div class="music">
+                <div class="control" onclick="backward()">
+            <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="control" id="play-song">
+                  <i class="fa-solid fa-play" ></i>
+                  <i class="fa-solid fa-pause" id="spc"></i>
+                </div>
+                <div class="control" onclick="forward()">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+            <audio src="s0.mp3" class="song"></audio>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
